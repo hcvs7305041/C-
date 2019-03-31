@@ -266,9 +266,82 @@ int main ()
     free(b);
     free(c);
     return 0;
-}//a122. T601
+}
+//a122. T601
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main () 
+{
+    char str[]="Apple iPhone 4";
+    char pstr2[20]="Apple";
+    char pstr1[]=" iPod";
+    char str3[20];
+    printf("str字串的長度是%d\n", strlen(str));//取得字串長度函數為strlen()
+    printf("pstr2連結pstr1後的字串為:%s\n", strcat(pstr2, pstr1));//字串串聯函數為strcat()
+    printf("str3字串如下:%s\n", strcpy(str3, pstr1));//字串複製函數為strcpy()
+return 0;
+}
 //a123. T602
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main () 
+{
+     char str2[]="Apple iPod";
+     char str4[]="Apple iPad";
+     int n;
+     n=strcmp(str2, str4);
+	//strcmp()比較字串的函式，如果前面大於後面則是true=1，相等為0，小於則是-1
+     if (n>0) {
+          printf("%s大於%s\n", str2, str4);
+     } else if (n==0) {
+          printf("%s等於%s\n", str2, str4);
+     } else {
+          printf("%s小於%s\n", str2, str4);
+
+     }
+     n=strncmp(str2, str4, 5);
+     if (n>0) {
+          printf("%s前五個字元大於%s前五個字元\n", str2, str4);
+     } else if (n==0) {
+          printf("%s前五個字元等於%s前五個字元\n", str2, str4);
+     } else {
+          printf("%s前五個字元小於%s前五個字元\n", str2, str4);
+     }
+     return 0;
+}
 //a124. T603
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main () 
+{
+     char str2[]="Apple iPod";
+     char str4[]="Apple iPad";
+     int n;
+     n=strcmp(str2, str4);
+     if (n>0) {
+          printf("%s大於%s\n", str2, str4);
+     } else if (n==0) {
+          printf("%s等於%s\n", str2, str4);
+
+     } else {
+          printf("%s小於%s\n", str2, str4);
+     }
+     n=strncmp(str2, str4, 5);
+     if (n>0) {
+          printf("%s前五個字元大於%s前五個字元\n", str2, str4);
+     } else if (n==0) {
+          printf("%s前五個字元等於%s前五個字元\n", str2, str4);
+     } else {
+          printf("%s前五個字元小於%s前五個字元\n", str2, str4);
+     }
+     return 0;
+}
 //a125. T604
 //a126. T605
 //a127. T606
@@ -279,26 +352,39 @@ int main ()
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <conio.h>
 #include <ctype.h>
+//void abc(int);
 int main () 
 {
-     char ch, ch2;
-     printf("請輸入一小寫的英文字母: ");
-     //ch=getche();
-     ch=scanf("%c",&ch);
-//將下列的字元轉為大寫
-    ch2=toupper(ch);
-     printf("%c的大寫是%c", ch, ch2);
- /*
- while (ch != '\n') {
- continue;
- }
- */
-  //將下列的字元轉為小寫
-     printf("\n請輸入一大寫的英文字母: ");
-     scanf("%c", &ch);
-     ch2=tolower(ch);
-     printf("%c的小寫是%c", ch, ch2);
-     return 0;
+    char ch, ch2;
+    char a;
+    printf("請輸入一小寫的英文字母: ");
+     	ch=scanf("%c",&ch);
+ /*   	if((ch>='A')&&(ch<='Z')){
+ 		ch=a;
+ 	   ch+=32;//利用ASCII  加上32變成小寫
+ 	}
+	else if((ch>='a')&&(ch<='z')){
+		ch=a;
+ 	   ch-=32;//利用ASCII  加上32變成大寫
+ 	}*/
+    printf("%c的大寫是%c", ch, ch2);
+    
+  /*  printf("\n請輸入一大寫的英文字母: ");
+   	 scanf("%c", &ch2);
+   	abc(ch2);
+    printf("%c的小寫是%c", ch, ch2);*/
+    return 0;
 }
+/*
+void abc(int ch){
+int a;
+	if((ch>='A')&&(ch<='Z')){
+ 		ch=a;
+ 	   ch+=32;//利用ASCII  加上32變成小寫
+ 	}
+	else if((ch>='a')&&(ch<='z')){
+		ch=a;
+ 	   ch-=32;//利用ASCII  加上32變成大寫
+ 	}
+}*/
