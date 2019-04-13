@@ -1,9 +1,9 @@
+//a056. 1050305 第 1 題 成績指標
 #include <stdio.h>
 #include <stdlib.h>
 void sorting(int* ,int);
  
 int main () {
-	//a056. 1050305 第 1 題 成績指標
   int	a,i;
 	int	b[999];
 	scanf("%d",&a);
