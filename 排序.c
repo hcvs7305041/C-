@@ -1,3 +1,5 @@
+void sorting (int*,int);
+
 void sorting (int *x,int n){
 	int a,b,c;
 	for(a=0;a<n;a++){
