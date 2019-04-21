@@ -65,6 +65,42 @@ void sorting (int* x,int n){
 		}
 	}
 }
+//====================================
+
+
+
+//a068: 1061028 第 1 題 邏輯運算子(Logic Operators)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int a, b, c;	
+	scanf("%d %d %d",&a,&b,&c);
+	//c=!!c; not判斷 c是否=0or1 
+	if (a>0)a=1;  //題目規定a=0or1 
+	if (b>0)b=1;  //題目規定b=0or1 
+	if ((a&b)==c){
+		printf("AND\n");
+	}
+	if ((a|b)==c){
+		printf("OR\n");
+	}
+	if ((a^b)==c){
+		printf("XOR\n");
+	}
+	if ((a&b)!=c && (a|b)!=c && (a^b)!=c){
+	printf("IMPOSSIBLE\n");
+	}
+return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
