@@ -343,48 +343,159 @@ int main ()
      return 0;
 }
 //a125. T604
-//a126. T605
-//a127. T606
-//a128. T607
-//a129. T608
-//a130. T609
-//a131. T610
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-//void abc(int);
 int main () 
 {
     char ch, ch2;
-    char a;
     printf("請輸入一小寫的英文字母: ");
-     	ch=scanf("%c",&ch);
- /*   	if((ch>='A')&&(ch<='Z')){
- 		ch=a;
- 	   ch+=32;//利用ASCII  加上32變成小寫
- 	}
-	else if((ch>='a')&&(ch<='z')){
-		ch=a;
- 	   ch-=32;//利用ASCII  加上32變成大寫
- 	}*/
-    printf("%c的大寫是%c", ch, ch2);
-    
-  /*  printf("\n請輸入一大寫的英文字母: ");
-   	 scanf("%c", &ch2);
-   	abc(ch2);
-    printf("%c的小寫是%c", ch, ch2);*/
-    return 0;
+	scanf("%c",&ch);
+	//將下列的字元轉為大寫
+    	ch2=toupper(ch);
+    printf("\n%c的大寫是%c", ch, ch2);
+
+	getchar();
+
+	//將下列的字元轉為小寫
+    printf("\n請輸入一大寫的英文字母: ");
+    scanf("%c", &ch);
+    	ch2=tolower(ch);
+    printf("%c的小寫是%c", ch, ch2);
+return 0;
 }
-/*
-void abc(int ch){
-int a;
-	if((ch>='A')&&(ch<='Z')){
- 		ch=a;
- 	   ch+=32;//利用ASCII  加上32變成小寫
- 	}
-	else if((ch>='a')&&(ch<='z')){
-		ch=a;
- 	   ch-=32;//利用ASCII  加上32變成大寫
- 	}
-}*/
+
+//a126. T605
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main ()
+{
+     char ch, ch2;
+     printf("請輸入一小寫的英文字母: ");
+     scanf("%c", &ch);
+//將下列的字元轉為大寫
+     ch2=toupper(ch);
+     printf("%c的大寫是%c", ch, ch2);
+     while (getchar() != '\n') {//將使用者多輸入的東西消耗掉
+        continue;
+     }
+//將下列的字元轉為大小寫
+     printf("\n請輸入一大寫的英文字母: ");
+     scanf("%c", &ch);
+     ch2=tolower(ch);
+     printf("%c的小寫是%c", ch, ch2);
+     return 0;
+}
+
+//a127. T606
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdlib.h>
+int main () {
+	char chrary[10];
+	int i,k;
+	char ch;
+    k=0;
+    printf("請輸入一字元: ");
+    	scanf("%c", &ch);
+//將一行多餘的字元丟掉
+    while (getchar()!='\n') {
+    	continue;
+    }
+    while(ch!='*'){
+    	chrary[k]=ch;
+    	k++;
+        printf("請輸入一字元: ");
+    	    scanf("%c", &ch);
+//將一行多餘的字元丟掉
+    while (getchar() != '\n'){
+        continue;
+        } 
+    }
+    printf("\n以下是您輸入的資料:\n");
+     for(i=0;i<k;i++)
+    	printf("  %c\n",chrary[i]);
+    	
+
+return 0;
+}
+
+//a128. T607
+#include <stdio.h>
+#include <stdlib.h>
+int main () 
+{
+     char str[9];
+     char *pstr;
+     printf("請輸入str字串: ");
+     	scanf("%s", str);
+     printf("請輸入pstr字串: ");
+     pstr=(char *)malloc(sizeof(char ));
+    	 scanf("%s", pstr);
+     printf("\n您輸入str字串如下: %s\n", str);
+     printf("您輸入pstr字串如下: %s\n", pstr);
+     return 0;
+}
+
+//a129. T608
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+     char str[60]="Apple iPhone 4";
+     char sttr[]={'i', 'P', 'a', 'd'};
+     char *pstr="Apple iPod";
+     printf("str字串如下: %s\n", str);
+     printf("sttr字串如下: %s\n", sttr);
+     printf("pstr字串如下: %s\n", pstr);
+     return 0;
+}
+
+//a130. T609
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main () 
+{
+     char str1[]="iPhone 4";
+     char str2[40]="Apple iPod";
+     char str3[40]="Apple ";
+     char str4[40];
+     strncat(str3,str1, 5);
+     strncpy(str4, str2+6, 5);
+     printf("%s\n", str3);
+     printf("%s\n", str4);
+     return 0;
+}
+
+//a131. T610
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main (){
+      char name[10][20];
+      int score[10];
+      char na[20];
+      int sc;
+      int k=0,i;
+      printf("請輸入姓名: ");
+      scanf("%s",&na);
+      printf("請輸入分數: ");
+      scanf("%d",&sc);
+      while(sc!=-100) {
+            strcpy(name[k],na);
+            score[k]=sc;
+            printf("請輸入姓名: ");
+            scanf("%s",na);
+            printf("請輸入分數: ");
+            scanf("%d",&sc);
+            k++;
+      }
+      printf("\n以下是您輸入的資料:\n");
+      for(i=0;i<k;i++){
+            printf("%-10s %3d\n", name[i], score[i]);
+      }
+}
