@@ -89,9 +89,92 @@ int main () {
 }
 
 //a138. T707
+struct student {
+char name[20];
+int score;
+};
+
+typedef struct student ST; //typedef 位置 
+ 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> //要用 
+int main () {
+     ST stname;
+     strcpy(stname.name,"Jonh"); //把字串複製進去該記憶體
+     stname.score=90;
+     printf("%s的分數為%d\n", stname.name, stname.score);
+     return 0;
+}
+
 //a139. T708
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define random(x) rand()%x+1
+int main() 
+{
+     int i, j;
+     int x;
+     printf("隨機數的最大值為: ");
+     scanf("%d", &x);
+     for (i=0; i<5; i++) {
+          for (j=0; j<4; j++) {
+               printf("%5d ", random(x));
+          }
+          printf("\n");
+     }
+     return 0;
+}
+
 //a140. T709
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main () 
+{
+     double result;
+     double a, b, c, d, e, f;
+     printf("請輸入a, b, c的值: ");
+     scanf("%lf %lf %lf", &a, &b, &c);
+     printf("請輸入d, e, f的值: ");
+     scanf("%lf %lf %lf", &d, &e, &f);
+     result = fabs(a)*floor(b)+pow(c, d)*sqrt(e)+log10(f); 
+	 	//fabs絕對值  floor最大整數值小於或等於x  pow"x的y次"  sqrt平方根 log10"x的常用對數"
+     printf("result = %f", result);
+     return 0;
+}
 //a141. T710
+#include <stdio.h>
+#include <stdlib.h>
+/* 若沒有定義Knum, 則加以定義為1000 */
+#ifndef Knum
+#define Knum 1000
+#endif
+/* 將Knum解除定義, 之後再定義為200 */
+#undef Knum
+#define Knum 200
+
+int main () 
+{
+/* 印出最後的Knum值 */
+     printf("Knum = %d\n", Knum);
+/* 下列的變數d和i共用8個Bytes, 不是12個Bytes */
+     union dataType {
+          double d;
+          int i;
+     };
+     union dataType dT;
+     printf("請輸入d的變數值: "); //將兩數分開
+     scanf("%lf", &dT.d); 
+     printf("%lf\n",dT.d);
+     printf("請輸入i的變數值: "); //將兩數分開
+     scanf("%d", &dT.d); 
+     printf("%d\n",dT.i);
+/* 印出dT變數中的d和i */
+
+     return 0;
+}
 //a142. T801
 //a143. T802
 //a144. T803
