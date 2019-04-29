@@ -294,10 +294,10 @@ int main ()
      char str4[]="Apple iPad";
      int n;
      n=strcmp(str2, str4);
-	//strcmp()比較字串的函式，如果前面大於後面則是true=1，相等為0，小於則是-1
+     //strcmp()比較字串，前大於後 true=1，相等0，小於-1
      if (n>0) {
           printf("%s大於%s\n", str2, str4);
-     } else if (n==0) {
+     } else if (n==0) { //n==0
           printf("%s等於%s\n", str2, str4);
      } else {
           printf("%s小於%s\n", str2, str4);
@@ -306,13 +306,14 @@ int main ()
      n=strncmp(str2, str4, 5);
      if (n>0) {
           printf("%s前五個字元大於%s前五個字元\n", str2, str4);
-     } else if (n==0) {
+     } else if (n==0) {  //n==0
           printf("%s前五個字元等於%s前五個字元\n", str2, str4);
      } else {
           printf("%s前五個字元小於%s前五個字元\n", str2, str4);
      }
      return 0;
 }
+
 //a124. T603
 #include <stdio.h>
 #include <stdlib.h>
@@ -442,10 +443,9 @@ int main ()
 //a129. T608
 #include <stdio.h>
 #include <stdlib.h>
-
 int main () 
 {
-     char str[60]="Apple iPhone 4";
+     char str[20]="Apple iPhone 4"; //空間不夠 
      char sttr[]={'i', 'P', 'a', 'd'};
      char *pstr="Apple iPod";
      printf("str字串如下: %s\n", str);
