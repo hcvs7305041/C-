@@ -15,11 +15,11 @@ int main(){
 
 int main()
 { 
-     double a, b, total;
-     printf("½Ğ¿é¤J¨â­Ó¯BÂI¼Æ:");
-     scanf("%lf %lf", &a, &b);
-     total=a+b;
-     printf("total=%lf", total);
+     double a, b ,total; //å®£å‘Štotal 
+     printf("è«‹è¼¸å…¥å…©å€‹æµ®é»æ•¸:");
+     scanf("%lf %lf", &a, &b); //%lf  &
+     total = a+b;
+     printf("total=%lf", total); //doubleç”¨%lf 
      return 0;
 }
 
@@ -45,14 +45,14 @@ int main ()
 
 int main() 
 {
-    int unit;
-    double price=23.34;
-    double total;
-	scanf("%d", &unit); 
-    total = unit*price;
-     	printf("½Ğ°İ±z­n¶R´X²~Ä«ªG¥Ä? ");
-     	printf("§Ú¶R¤F%d²~100%ªºÄ«ªG¥Ä\n", unit);
-     	printf("ªá¤F%lf¤¸", total);
+     int unit;
+     double price=23.34; 
+     double total; //æµ®é»æ•¸ 
+     printf("è«‹å•æ‚¨è¦è²·å¹¾ç“¶è˜‹æœæ±? ");
+     	scanf("%d", &unit); //&
+     total = unit*price;
+     printf("æˆ‘è²·äº†%dç“¶100%çš„è˜‹æœæ±\n", unit);
+     printf("èŠ±äº†%lfå…ƒ", total); //lf 
      return 0;
 }
 
@@ -65,19 +65,19 @@ int main ()
 {
     int a, b, c, total;
     double average; 
-    printf("½Ğ¿é¤J²Ä¤@­Ó¾ã¼Æ? ");
+    printf("è«‹è¼¸å…¥ç¬¬ä¸€å€‹æ•´æ•¸? ");
     	scanf("%d", &a);
-    printf("½Ğ¿é¤J²Ä¤G­Ó¾ã¼Æ? ");
+    printf("è«‹è¼¸å…¥ç¬¬äºŒå€‹æ•´æ•¸? ");
     	scanf("%d", &b); 
-    printf("½Ğ¿é¤J²Ä¤T­Ó¾ã¼Æ? ");
+    printf("è«‹è¼¸å…¥ç¬¬ä¸‰å€‹æ•´æ•¸? ");
     	scanf("%d", &c);
     	
     total = a+b+c;
     average = (float)total/3;
-    /*(float)±j¨îÂà«¬*/ 
+    /*(float)å¼·åˆ¶è½‰å‹*/ 
 
     printf("%d+%d+%d=%d\n", a, b, c, total);
-    printf("¥­§¡¼Æ¬°%.2lf", average);
+    printf("å¹³å‡æ•¸ç‚º%.2lf", average);
 return 0;
 }
 
@@ -89,18 +89,18 @@ return 0;
 int main () 
 {
      int a, b, c, d ,x,y,z;
-     printf("½Ğ¿é¤J²Ä¤@­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬ä¸€å€‹æ•´æ•¸? ");
      	scanf("%d", &a);
-     printf("½Ğ¿é¤J²Ä¤G­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬äºŒå€‹æ•´æ•¸? ");
     	 scanf("%d", &b); 
-     printf("½Ğ¿é¤J²Ä¤T­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬ä¸‰å€‹æ•´æ•¸? ");
     	 scanf("%d", &c);
-     printf("½Ğ¿é¤J²Ä¥|­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬å››å€‹æ•´æ•¸? ");
     	 scanf("%d", &d);
 	x=a+b;
 	y=c+d;
 	z=(x/2-y/2)%2;
-     printf("¦¹¦¡ªº¾l¼Æ¬°%d\n", z);
+     printf("æ­¤å¼çš„é¤˜æ•¸ç‚º%d\n", z);
      return 0;
 }
 
@@ -112,24 +112,24 @@ int main ()
 int main () 
 {
      int a, b, c, d, e, f;
-     printf("½Ğ¿é¤J²Ä¤@­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬ä¸€å€‹æ•´æ•¸? ");
      	scanf("%d", &a);
-     printf("½Ğ¿é¤J²Ä¤G­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬äºŒå€‹æ•´æ•¸? ");
      	scanf("%d", &b); 
-     printf("½Ğ¿é¤J²Ä¤T­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬ä¸‰å€‹æ•´æ•¸? ");
    		scanf("%d", &c);
-     printf("½Ğ¿é¤J²Ä¥|­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬å››å€‹æ•´æ•¸? ");
    		scanf("%d", &d);
-     printf("½Ğ¿é¤J²Ä¤­­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬äº”å€‹æ•´æ•¸? ");
      	scanf("%d", &e);
-     printf("½Ğ¿é¤J²Ä¤»­Ó¾ã¼Æ? ");
+     printf("è«‹è¼¸å…¥ç¬¬å…­å€‹æ•´æ•¸? ");
     	scanf("%d", &f);
 
-     printf("\n¦V¥k¾a»ô\n");
+     printf("\nå‘å³é é½Š\n");
      printf("%10d %10d %10d\n", a, b, c);
      printf("%10d %10d %10d", d, e, f);
 
-     printf("\n\n¦V¥ª¾a»ô\n");
+     printf("\n\nå‘å·¦é é½Š\n");
      printf("%-10d %-10d %-10d\n", a, b, c);
      printf("%-10d %-10d %-10d", d, e, f);
 
@@ -144,26 +144,26 @@ int main ()
 int main () 
 {
 double a, b, c, d, e, f;
-printf("½Ğ¿é¤J²Ä¤@­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &a);
-printf("½Ğ¿é¤J²Ä¤G­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &b); 
-printf("½Ğ¿é¤J²Ä¤T­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &c);
-printf("½Ğ¿é¤J²Ä¥|­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &d);
-printf("½Ğ¿é¤J²Ä¤­­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &e);
-printf("½Ğ¿é¤J²Ä¤»­Ó¯BÂI¼Æ: ");
-	scanf("%lf", &f);
+printf("è«‹è¼¸å…¥ç¬¬ä¸€å€‹æµ®é»æ•¸: ");
+scanf("%lf", &a); //%lf
+printf("è«‹è¼¸å…¥ç¬¬äºŒå€‹æµ®é»æ•¸: ");
+scanf("%lf", &b); //%lf
+printf("è«‹è¼¸å…¥ç¬¬ä¸‰å€‹æµ®é»æ•¸: ");
+scanf("%lf", &c); //%lf
+printf("è«‹è¼¸å…¥ç¬¬å››å€‹æµ®é»æ•¸: ");
+scanf("%lf", &d); //%lf
+printf("è«‹è¼¸å…¥ç¬¬äº”å€‹æµ®é»æ•¸: ");
+scanf("%lf", &e); //%lf
+printf("è«‹è¼¸å…¥ç¬¬å…­å€‹æµ®é»æ•¸: ");
+scanf("%lf", &f); //%lf
 
-printf("\n¦V¥k¾a»ô\n");
-printf("%10.2lf %10.2lf %10.2lf\n", a, b, c);
-printf("%10.2lf %10.2lf %10.2lf\n", d, e, f);
+printf("\nå‘å³é é½Š\n");
+printf("%10.2lf %10.2lf %10.2lf\n", a, b, c); //%10.2lf
+printf("%10.2lf %10.2lf %10.2lf\n", d, e, f); //%10.2lf
 
-printf("\n\n¦V¥ª¾a»ô\n");
-printf("%-10.2lf %-10.2lf %-10.2lf\n", a, b, c);
-printf("%-10.2lf %-10.2lf %-10.2lf\n", d, e, f);
+printf("\n\nå‘å·¦é é½Š\n");
+printf("%-10.2lf %-10.2lf %-10.2lf\n", a, b, c); //%-10.2lf 
+printf("%-10.2lf %-10.2lf %-10.2lf\n", d, e, f); //%-10.2lf
 
 return 0;
 }
@@ -176,27 +176,27 @@ return 0;
 int main () {
      int score;
 
-     printf("½Ğ¿é¤J±zªº¤À¼Æ: ");
+     printf("è«‹è¼¸å…¥æ‚¨çš„åˆ†æ•¸: ");
      scanf("%d", &score);
      if (60<=score&&score<=100) 
 	 {
-          printf("¤Î®æ");
+          printf("åŠæ ¼");
      }
      else 
 	 {
-          printf("¤£¤Î®æ");
+          printf("ä¸åŠæ ¼");
      }
 
      int x;
-     printf("\n\n½Ğ¿é¤Jx­È: ");
+     printf("\n\nè«‹è¼¸å…¥xå€¼: ");
      scanf("%d", &x);
      if (x%2==0)
 	  {
-          printf("%d¬O°¸¼Æ", x);
+          printf("%dæ˜¯å¶æ•¸", x);
      }
      else 
 	 {
-		  printf("%d¬O©_¼Æ", x);
+		  printf("%dæ˜¯å¥‡æ•¸", x);
      }
      return 0;
 }
@@ -210,18 +210,17 @@ a081: T110
 int main () 
 {
      int a, b, c;
-     printf("½Ğ¿é¤JÅÜ¼Æaªº­È: ");
+     printf("è«‹è¼¸å…¥è®Šæ•¸açš„å€¼: ");
      	scanf("%d", &a);
-     printf("½Ğ¿é¤JÅÜ¼Æbªº­È: ");
+     printf("è«‹è¼¸å…¥è®Šæ•¸bçš„å€¼: ");
      	scanf("%d", &b); 
-     printf("½Ğ¿é¤JÅÜ¼Æcªº­È: ");
+     printf("è«‹è¼¸å…¥è®Šæ•¸cçš„å€¼: ");
      	scanf("%d", &c);
-     printf("%d\n", 60<=a&&a<100);
+     printf("%d\n", 60<=a&&a<100); //&&
      printf("%f\n", (b+1)/10.);
-     printf("%d\n", a>c?a:c);
+     printf("%d\n", a>c?a:c); //a>c? a : c  
      return 0;
 }
-
 
 //a082: T201
 #include <stdio.h>
@@ -230,12 +229,12 @@ int main ()
 int main() 
 {
      int i;
-     printf("½Ğ¿é¤Ji­È: ");
+     printf("è«‹è¼¸å…¥iå€¼: ");
      	scanf("%d", &i);
      if (i%2==0)
-          printf("%d¬O°¸¼Æ\n", i);
+          printf("%dæ˜¯å¶æ•¸\n", i);
      else 
-          printf("%d¬O©_¼Æ\n", i);
+          printf("%dæ˜¯å¥‡æ•¸\n", i);
      return 0;
 }
 
@@ -247,15 +246,16 @@ int main()
 int main() 
 {
      int score, adjust;
-     printf("½Ğ¿é¤J¤À¼Æ:");
-     scanf("%d", &score);
-     if (score >= 60)
+     printf("è«‹è¼¸å…¥åˆ†æ•¸:");
+     scanf("%d", &score); //&
+     if (score >= 60) //ä¸è¦; 
           adjust = score+10;
      else 
           adjust = score+5;
-     printf("½Õ¾ã«áªº¤À¼Æ¬°%d", adjust);
+     printf("èª¿æ•´å¾Œçš„åˆ†æ•¸ç‚º%d", adjust);
      return 0;
 }
+
 
 
 //a084: T203
@@ -265,20 +265,20 @@ int main()
 int main () 
 {
 int floor; 
-printf("½Ğ°İ±z¦í­ş¤@¼h¼Ó(1-4): ");
+printf("è«‹å•æ‚¨ä½å“ªä¸€å±¤æ¨“(1-4): ");
 scanf("%d", &floor);
 switch (floor)
 	 {
     case 1:
-        printf("±z¦í¦b¤@¼Ó\n");break;
+        printf("æ‚¨ä½åœ¨ä¸€æ¨“\n");break;
     case 2:
-        printf("±z¦í¦b¤G¼Ó\n");break;
+        printf("æ‚¨ä½åœ¨äºŒæ¨“\n");break;
     case 3:
-        printf("±z¦í¦b¤T¼Ó\n");break;
+        printf("æ‚¨ä½åœ¨ä¸‰æ¨“\n");break;
     case 4:
-        printf("±z¦í¦b¥|¼Ó\n");break;
+        printf("æ‚¨ä½åœ¨å››æ¨“\n");break;
     default:
-        printf("±z¿é¤Jªº¼Ó¼h¤£¥¿½T\n");
+        printf("æ‚¨è¼¸å…¥çš„æ¨“å±¤ä¸æ­£ç¢º\n");
     }
 return 0;
 }
@@ -288,22 +288,24 @@ return 0;
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () {
-char ch; 
-printf("½Ğ°İ±zªº¨­¥÷:¥H¦r¥Àªí¥Ü¤À§O¦p¤U¡G\nU:ªí¥Ü¤j¾Ç¥Í¡AM:ªí¥Ü¬ã¨s¥Í¡AP:ªí¥Ü³Õ¤h¥Í ");
-scanf("%c", &ch);
-switch (ch) {
-    case 'U':
-    	printf("±z¬O¤j¾Ç¥Í\n");break;
-    case 'M':
-        printf("±z¬O¬ã¨s¥Í\n");break;
-    case 'P':
-        printf("±z¬O³Õ¤h¥Í\n");break;
-    default:
-        printf("±z¿é¤J¨­¥÷¤£¥¿½T\n");break;
+int main () 
+{
+     char ch; 
+     printf("è«‹å•æ‚¨çš„èº«ä»½:ä»¥å­—æ¯è¡¨ç¤ºåˆ†åˆ¥å¦‚ä¸‹ï¼š\nU:è¡¨ç¤ºå¤§å­¸ç”Ÿï¼ŒM:è¡¨ç¤ºç ”ç©¶ç”Ÿï¼ŒP:è¡¨ç¤ºåšå£«ç”Ÿ ");
+     scanf("%c", &ch); //&
+     switch (ch) { //å­—å…ƒ' ' å’Œbreak; 
+  	  	case 'U':
+    		printf("æ‚¨æ˜¯å¤§å­¸ç”Ÿ\n"); break;
+   	 	case 'M':
+   	    	printf("æ‚¨æ˜¯ç ”ç©¶ç”Ÿ\n"); break;
+   	 	case 'P':
+        	printf("æ‚¨æ˜¯åšå£«ç”Ÿ\n"); break;
+    	default:
+        	printf("æ‚¨è¼¸å…¥èº«ä»½ä¸æ­£ç¢º\n"); break;
      }
 return 0;
 }
+
 
 
 //a086. T205
@@ -315,8 +317,8 @@ int main ()
 int i, num;
 int num1=0, num2=0, num3=0, num4=0, others=0;
 for (i=1; i<=10; i++) {
-    printf("\n¯Zªø­Ô¿ï¤H¦p¤U:\n1: ¤p¤ı\n2: ¤p§õ\n3: ¤p½²\n4: ¤p³¯\n");
-    printf("½Ğ°İ±z­n¿ï­ş¦ì­Ô¿ï¤H(1-4):");
+    printf("\nç­é•·å€™é¸äººå¦‚ä¸‹:\n1: å°ç‹\n2: å°æ\n3: å°è”¡\n4: å°é™³\n");
+    printf("è«‹å•æ‚¨è¦é¸å“ªä½å€™é¸äºº(1-4):");
     scanf("%d", &num);
     switch (num) {
         case 1:
@@ -332,9 +334,9 @@ for (i=1; i<=10; i++) {
             num4++;
             break;
         default:
-            printf("±z¿é¤Jªº¸¹½X¤£¥¿½T\n");others++;break;
+            printf("æ‚¨è¼¸å…¥çš„è™Ÿç¢¼ä¸æ­£ç¢º\n");others++;break;
         }
-printf("¥Ø«e±o²¼¼Æ\n¤p¤ı:%d, ¤p§õ:%d, ¤p½²:%d, ¤p³¯:%d, ¼o²¼:%d\n", 
+printf("ç›®å‰å¾—ç¥¨æ•¸\nå°ç‹:%d, å°æ:%d, å°è”¡:%d, å°é™³:%d, å»¢ç¥¨:%d\n", 
 num1, num2, num3, num4, others);
 	}
 return 0;
@@ -353,7 +355,7 @@ int main ()
         i++;
         total += i;
      } 
-     printf("1¥[¨ì100ªºÁ`©M:%d\n", total);
+     printf("1åŠ åˆ°100çš„ç¸½å’Œ:%d\n", total);
      return 0;
 }
 
@@ -371,7 +373,7 @@ int main ()
           i++;
           total += i;
      }
-     printf("1¥[¨ì100ªºÁ`©M:%d\n", total);
+     printf("1åŠ åˆ°100çš„ç¸½å’Œ:%d\n", total);
      return 0;
 }
 
@@ -386,7 +388,7 @@ int main ()
      for (i=1; i<=100; i++)
 	    if(i%2==0)
          total += i;
-     printf("1¨ì100ªº°¸¼Æ©M: %d\n", total);
+     printf("1åˆ°100çš„å¶æ•¸å’Œ: %d\n", total);
      return 0;
 }
 
@@ -403,7 +405,7 @@ int main ()
           if(i%2==1)
           total += i;
      } while (i<100);
-     printf("1¨ì100ªº©_¼Æ©M: %d\n", total);
+     printf("1åˆ°100çš„å¥‡æ•¸å’Œ: %d\n", total);
      return 0;
 }
 
@@ -420,7 +422,7 @@ int main ()
           if(i%2==0)
           total += i;
      } while (i<=100);
-     printf("1¨ì100ªº°¸¼Æ©M: %d\n", total);
+     printf("1åˆ°100çš„å¶æ•¸å’Œ: %d\n", total);
      return 0;
 }
 
