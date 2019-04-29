@@ -17,7 +17,6 @@ int main ()
 //a093. T302
 #include <stdio.h>
 #include <stdlib.h>
-
 int adjust(int);
 int main () 
 {
@@ -25,22 +24,23 @@ int main ()
      printf("請輸入您的分數: ");
      scanf("%d", &score);
 
-     final = adjust(score);
+     final = adjust(score); //final = 
 
      printf("調整後的分數: %d", final);
      return 0;
 }
 
 int adjust(int score)
-{	
-	int temp; 
+{
+	int temp; //宣告temp 
      if (score >= 60) 
-          temp = score + 5;
+          temp = score + 5; //5
      else 
-          temp = score + 10;
+          temp = score + 10; //10
 
      return temp;
 }
+
 //a094. T303
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,12 +74,15 @@ int main()
 
 void callFun()
 {
-	int ai=100;
-	static int si=100;//在這邊將si變成static 全域變數，而宣告過後，重複宣告就沒意義，因此會將它進行累加。
+     int ai=100;
+	 static si=100;
+	 //static 全域變數，
+	 //全域宣告過後，重複宣告就沒意義，因此會累加。
      ai++;
      si++;
-     printf("ai=%d, si=%d\n", ai, si);
+     printf("ai=%d, si=%d\n", ai, si); //\n
 }
+
 //a096. T305
 #include <stdio.h>
 #include <stdlib.h>
@@ -103,20 +106,22 @@ int callTotal()
      sum = x+y;
      return sum;
 }
+
 //a097. T306
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-     int arr[6]={10, 20, 30, 40, 50, 60};
+     int arr[6]={10, 20, 30, 40, 50, 60}; //陣列[6] 
      int i, total=0;
-     for (i=0; i<6; i++) {
+     for (i=0; i<6; i++) { //i=0
           total += arr[i];
      }
-     printf("總和為%d\n", total);
+     printf("總和為%d\n", total); //%d
      return 0;
 }
+
 //a098. T307
 #include <stdio.h>
 #include <stdlib.h>
@@ -141,28 +146,28 @@ int main()
 double sum(double a[], int n);
 int main () 
 {
-     double arr[5];
+     double arr[5],total=0; //total浮點數 
      int i;
-     double total=0;
      for(i=0; i<5; i++) {
           printf("請輸入陣列arr[%d]元素值: ", i);
-          scanf("%lf", &arr[i]);
+          scanf("%lf", &arr[i]); //&
      }
      for(i=0; i<5; i++)
-          printf("arr[%d]=%.2f\n", i, arr[i]);
+          printf("arr[%d]=%.2lf\n", i, arr[i]);
      total=sum(arr,i);
-     printf("此陣列的總和為%.2f\n", total);
+     printf("此陣列的總和為%.2lf\n", total);
      return 0;
 }
 
-double sum(double a[], int n)
+double sum(double a[], int n) //double
 {
      int k;
-     double tot=0;
-     for(k=0; k<n; k++)
+     double tot;
+     for(k=0; k<n; k++) //k=0
           tot += a[k];
      return tot;
 }
+
 //a100. T309
 #include <stdio.h>
 #include <stdlib.h>
@@ -201,28 +206,29 @@ int main ()
      int arr[5]={100, 200, 300, 400, 500};
      int i;
      printf("\n表達陣列元素的值方式一:\n");
-     for (i=0; i<5; i++)
+     for (i=0; i<5; i++) //i=0
      {
         printf("arr[%d]=%d\n", i, arr[i]);
      }
      printf("\n表達陣列元素的值方式二:\n");
-     for (i=0; i<5; i++)
+     for (i=0; i<5; i++) //i=0
      {
-        printf("arr[%d]=%d\n", i, arr[i]);
+        printf("arr[%d]=%d\n", i, *(arr+i));
      }
      printf("\n表達陣列元素的值方式三:\n");
      int *p=arr;
      for (i=0; i<5; i++,p++)
      {
-        printf("arr[%d]=%d\n", i,*p);
+        printf("arr[%d]=%d\n", i,*p); //%p位址改 %d
      }
      printf("\n陣列元素的位址比較:\n");
-      for (i=0; i<5; i++) 
+      for (i=0; i<5; i++) //i=0
       {
-           printf("&arr[%d]==arr+%d is %s\n", i, i,&arr[i]==arr+i?"yes":"no");
+           printf("&arr[%d]==arr+%d is %s\n", i, i,(arr[i]==*(arr+i)?"yes":"no"));
       }
      return 0;
 }
+
 //a102. T401
 #include <stdio.h>
 #include <stdlib.h>
