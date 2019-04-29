@@ -18,14 +18,14 @@ int main ()
 int main () 
 {
     char string[20];
-    double output; //int
+    double output;
     printf("請輸入一數字的字串: ");
     scanf("%s", string);
-    output=atof(string);
-    printf("%s轉換後的浮點數為%f\n", string, output); //%d
+    output=atoi(string); //atoi 字符串 轉整數
+    printf("%s轉換後的整數為%.0f\n", string, output); //%.0f 
     return 0;
 }
-
+ 
 //a134. T703
 #define NTRATE 31.34;
 #include <stdio.h>
@@ -111,15 +111,15 @@ int main () {
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define random(x) rand()%x+1
+#define random(x) rand()%x+1 //rand()%x +1
 int main() 
 {
      int i, j;
      int x;
      printf("隨機數的最大值為: ");
      scanf("%d", &x);
-     for (i=0; i<5; i++) {
-          for (j=0; j<4; j++) {
+     for (i=0; i<5; i++) { //i=0
+          for (j=0; j<4; j++) { //j=0
                printf("%5d ", random(x));
           }
           printf("\n");
@@ -164,15 +164,14 @@ int main ()
           double d;
           int i;
      };
-     union dataType dT;
-     printf("請輸入d的變數值: "); //將兩數分開
-     scanf("%lf", &dT.d); 
-     printf("%lf\n",dT.d);
-     printf("請輸入i的變數值: "); //將兩數分開
-     scanf("%d", &dT.d); 
-     printf("%d\n",dT.i);
+     union dataType dT; //union
+     printf("請輸入d的變數值: "); //改字 
+     scanf("%lf", &dT.d); //去%d 將兩數分開
+	 printf("%lf\n",dT.d); //%lf\n 輸出dT.d 
 /* 印出dT變數中的d和i */
-
+	 printf("請輸入i的變數值: "); //改字(自己補) 
+     scanf("%d", &dT.d); //輸入 改%d 將兩數分開 &
+     printf("%d\n",dT.i); //\n
      return 0;
 }
 //a142. T801
