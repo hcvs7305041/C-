@@ -175,6 +175,58 @@ int main ()
      return 0;
 }
 //a142. T801
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int m,n;
+    int i=0,j=0;
+	while(1){
+	printf("輸入三角型形狀代號(1-4)及星星數量(1-10):");
+		scanf("%d%d",&m,&n);
+		if(m>4||m<1||n>10||n<1)break;
+	if((m>=1)&&(m<=4)||(n>=1)&&(n<=10)){
+		switch (m){
+    	   	case 1:{
+				for(i=1;i<=n;i++)
+				{
+ 					for(j=0;j<i;j++)printf("*");
+ 					printf("\n");
+					}
+				break;
+				}
+    	   	case 2:{
+				for(i=1;i<=n;i++)
+				{
+ 					for(j=i;j<=n;j++)printf("*");
+ 					printf("\n");
+				}
+				break;
+				}
+    	  	case 3:{ 
+				for(i=1;i<=n;i++)
+				{
+					for(j=i;j<n;j++) printf(" ");
+					for(j=0;j<i;j++) printf("*");
+ 				printf("\n");
+				} 
+			break;
+			}
+    	  	case 4:{ 
+				for(i=1;i<=n;i++)
+				{
+ 					for(j=1;j<i;j++) printf(" ");
+ 					for(j=i;j<=n;j++) printf("*");
+				printf("\n");
+				}
+			break;
+			}
+			default:break;
+   		}
+    }
+    }
+return 0;
+}
 //a143. T802
 //a144. T803
 //a145. T804
