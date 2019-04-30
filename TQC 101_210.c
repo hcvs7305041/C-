@@ -293,14 +293,14 @@ int main ()
      char ch; 
      printf("請問您的身份:以字母表示分別如下：\nU:表示大學生，M:表示研究生，P:表示博士生 ");
      scanf("%c", &ch); //&
-     switch (ch) { //字元' ' 和break; 
+     switch (ch) { //(default的 : ) (字元' ') (break;)
   	  	case 'U':
     		printf("您是大學生\n"); break;
    	 	case 'M':
    	    	printf("您是研究生\n"); break;
    	 	case 'P':
         	printf("您是博士生\n"); break;
-    	default:
+    	default:  
         	printf("您輸入身份不正確\n"); break;
      }
 return 0;
