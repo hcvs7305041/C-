@@ -419,11 +419,10 @@ int main ()
 
 int main () 
 {
-     int i=1, total=0; //total 歸0 
+     int i=0, total=0;  //i歸0 total 歸0 
      do {
-          i++; //i=i+1 
-          if(i%2==0) //判斷偶數 
-          	total += i;
+          i+=2;
+          total += i;
      } while (i<100);
      printf("1到100的偶數和: %d\n", total);
      return 0;
