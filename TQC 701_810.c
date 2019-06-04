@@ -228,11 +228,262 @@ int main(){
 return 0;
 }
 //a143. T802
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int a=0;
+	while(1){
+		printf("(1)教授\n(2)副教授\n(3)助理教授\n(4)都不是\n(5)結束\n請輸入您的職稱代號:");
+		scanf("%d",&a);
+		switch (a)
+		{
+			case 1: printf("\n您的職稱是教授\n");break;
+			case 2: printf("\n您的職稱是副教授\n");break;
+			case 3: printf("\n您的職稱是助理教授\n");break;
+			case 4: printf("\n您的職稱沒有在這選項內\n");break;
+			case 5: break;
+			default: printf("\n您的職稱沒有在這選項內\n");
+		}
+	if(a==5)break;
+	}
+return 0;
+}
+
 //a144. T803
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int i;
+	double a,data[6];
+	for(i=0;i<6;i++){
+	printf("請輸入第%d個浮點數:",i+1 );
+	scanf("%lf",&data[i]);
+}
+
+printf("\n您輸入的陣列值如下\n");
+ for(i =0;i<6;i++)
+  printf("\ndata[%d]:%.2f",i,data[i]);
+
+for(i=0;i<6;i++){
+	a+=data[i];
+	
+}
+a=a/6;
+ printf("\n平均:%.2f",a);
+}
+=================================================================================================================
+=================================================================================================================
+/*#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int i=10, a=0, b=0, c=0;
+	char x;
+	while(i--){
+		printf("(1)小蔡\n(2)小王\n(3)小史\n請您投票:");
+		scanf("%s",&x);
+		if(x=='1') a++;
+		else if(x=='2') b++;
+		else if(x=='3') c++;
+		else i++;
+		if(x=='1'||x=='2'||x=='3') printf("小蔡得票數:%d\n小王得票數:%d\n小史得票數:%d\n",a,b,c); //1 2 3才顯示 
+	}
+return 0;
+}*/
+
 //a145. T804
+#include <iostream> 
+
+using namespace std;
+
+int main (){
+	int i, j;
+	double data[6],a=0;
+	for(i=0;i<6;i++)
+	{
+		printf("請輸入第%d個浮點數:",i+1);
+		cin >> data[i] ;
+	}
+	printf("\n您輸入的陣列值如下\n");
+	for(i=0;i<6;i++)
+	{
+		printf("data[%d]:%.2lf\n",i,data[i]);
+		a+=data[i];
+	}
+	a=a/6;
+	printf("\n平均:%.2lf",a);
+}
+
 //a146. T805
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
+
+void CPD08_1(void);
+void CPD08_2(void);
+int main (){
+	CPD08_1();
+    CPD08_2();
+    return 0;
+}
+
+void CPD08_1(void)
+{
+	int arr[3][4] ,i ,j , x=0;
+	for(i=0;i<3;i++){	//輸入2維陣列  
+		cout << "請輸入四個數字(數字之間請以空白為間隔):" << endl;
+		for(j=0;j<4;j++){
+			cin >> arr[i][j];
+			x=x+arr[i][j];
+		}
+	}
+	cout << endl;
+	for(i=0;i<3;i++){
+		for(j=0;j<4;j++){ 
+			cout <<	arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+	
+	cout << "sum:" << x << endl;	//平均 
+}
+
+
+void CPD08_2(void)
+{
+	int arr[5][2] ,i ,j , x=0;
+	for(i=0;i<5;i++){	//輸入2維陣列
+		cout << "請輸入二個數字(數字跟數字之間請以空白為間格):" << endl;
+		for(j=0;j<2;j++){
+			cin >> arr[i][j];
+			x=x+arr[i][j];
+		} 
+	}
+	cout << endl;
+	for(i=0;i<5;i++){
+		for(j=0;j<2;j++){
+			cout <<	arr[i][j] << " ";
+		}
+	cout << endl;
+	}
+	
+	cout << "sum:" << x;	//平均
+}
+
 //a147. T806
+#include<stdio.h>
+#include <stdlib.h>
+
+void multiply(int);
+void printStar(int);
+
+int main(){ 
+	int m,p;
+	printf("請輸入您要幾乘幾的乘法表(最多10):");
+		scanf("%d",&m);
+	printf("請輸入您要多少個星星:");
+		scanf("%d",&p);
+	printStar(p);
+	if(m<=10){
+		multiply(m);
+	}
+	printStar(p);
+return 0;
+}
+
+void multiply(int n){//乘法 
+	int a,b;
+	for ( a=1;a<=n;a++ ) 
+		{ 
+			for ( b=1;b<=n;b++)
+			{ 
+				printf("%2d*%2d=%2d ",a,b,a*b);
+			}
+		printf("\n");
+		}
+}
+
+void printStar(int n){//星星 
+	int i;
+	for(i=0;i<n;i++){
+		printf("*");
+	} 
+printf("\n");
+}
+=================================================================================================================
+=================================================================================================================
+/*#include <iostream>
+using namespace std;
+void star(int);
+void math(int);
+
+int main() {
+	int m, s;
+	cout << "請輸入您要幾乘幾的乘法表(最多10):" ;
+	 cin >> m ;
+	cout << "請輸入您要多少個星星:" ;
+	 cin >> s ; 
+	star(s);
+	if(m<=10) math(m);
+	star(s);
+return 0;
+}
+void star(int n){
+	int i;
+	for(i=0;i<n;i++) cout << "*" ; 
+	cout << endl;
+}
+void math(int n)
+{
+	int a, b;
+	for(a=1;a<=n;a++){
+	 for(b=1;b<=n;b++){
+	 	printf("%2d*%2d=%2d ",a,b,a*b);
+	 } 
+	cout << endl;
+	}	
+}*/
+	
 //a148. T807
+	
 //a149. T808
+#include <stdio.h>
+#include <stdlib.h>
+void sorting(int*,int);
+int main() {
+	int scoredata[10];
+	int i;
+	printf("請輸入十個數...\n");
+		for(i=0;i<10;i++){
+			printf("第 %d 個: ",i+1);
+			scanf("%d",&scoredata[i]);
+		}
+	printf("排序前: ");
+		for(i=0;i<10;i++){
+			printf(" %d",scoredata[i]);
+		}
+		
+	sorting(scoredata,10);
+	
+	printf("\n排序後: ");
+		for(i=0;i<10;i++){
+			printf(" %d",scoredata[i]);
+		}
+return 0;
+}
+void sorting(int* data2,int n){
+	int i, j ,temp;
+	for(i=0;i<n-1;i++){
+		for(j=0;j<n-1;j++){
+			if(data2[j]>data2[j+1]){
+				temp = data2[j+1];
+				data2[j+1] = data2[j];
+				data2[j] = temp;
+			}
+		}
+	}
+}
+
 //a150. T809
 //a151. T810
