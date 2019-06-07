@@ -1,6 +1,6 @@
 void sorting (int*,int);
 
-void sorting (int *x,int n){ //大到小
+void sorting (int *x,int n){ //小到大大到小
 	int a,b,c;
 	for(a=0;a<n;a++){
 		for(b=0;b<n;b++){
@@ -14,7 +14,7 @@ void sorting (int *x,int n){ //大到小
 }
 
 /*
-void sorting (int *x,int n){ //小到大
+void sorting (int *x,int n){ //大到小
 	int a,b,c;
 	for(a=0;a<n;a++){
 		for(b=0;b<n;b++){
