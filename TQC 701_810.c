@@ -520,4 +520,40 @@ void sorting(int* data2,int n){
 }
 
 //a150. T809****************************************************************************************************
+#include <iostream>
+
+void sorting (int*,int);
+
+using namespace std;
+
+int main (){
+	int arr[15] ,arr2[5][3] , i ,j ;
+	cout << "請輸入..." << endl ;
+	for (i=0;i<15;i++){
+		printf("arr[%d]: ",i);
+		cin >> arr[i] ;
+	}
+	sorting(arr,15);
+	cout << "印出陣列: " ;
+	for (i=0;i<5;i++){
+		for (j=0;j<3;j++){
+			arr2[i][j] = arr[i*3+j];
+			printf("arr2[%d][%d]=%d\n",i,j,arr2[i][j]);
+		}
+	}
+}
+
+void sorting (int *x,int n){ //小到大
+	int a,b,c;
+	for(a=0;a<n;a++){
+		for(b=0;b<n;b++){
+			if(x[b]>x[a]){
+				c=x[b];
+				x[b]=x[a];
+				x[a]=c;
+			}
+		}
+	}
+}
+
 //a151. T810****************************************************************************************************
