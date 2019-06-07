@@ -557,3 +557,49 @@ void sorting (int *x,int n){ //小到大
 }
 
 //a151. T810****************************************************************************************************
+#include <iostream>
+
+using namespace std;
+
+int main (){
+	int m1[3][3] ,m2[3][3], i ,j ;
+	cout << "請輸入矩陣一..." << endl ;
+		for (i=0;i<3;i++){
+			for (j=0;j<3;j++){
+				printf("m1[%d][%d]: ",i,j);
+				cin >> m1[i][j] ;	
+			}
+		}
+	cout << "請輸入矩陣二..." << endl ;
+		for (i=0;i<3;i++){
+			for (j=0;j<3;j++){
+				printf("m2[%d][%d]: ",i,j);
+				cin >> m2[i][j] ;
+			}
+		}
+		
+	printf("\n");
+ 	cout << "矩陣一" << endl ;
+		for (i=0;i<3;i++){
+ 			for (j=0;j<3;j++){
+				printf(" %2d",m1[i][j]);
+			}
+		printf("\n");
+		} 
+	cout << "矩陣二" << endl ;
+		for (i=0;i<3;i++){
+			for (j=0;j<3;j++){
+				printf(" %2d",m2[i][j])	;				
+			}
+		printf("\n");
+		}	
+	cout << "矩陣三" << endl ;
+		for (i=0;i<3;i++){
+			for (j=0;j<3;j++){
+				printf(" %2d",m1[i][j]*m2[i][j]);					
+			}
+		printf("\n");
+		}
+
+}
+
