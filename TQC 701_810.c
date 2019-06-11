@@ -459,7 +459,7 @@ int main() {
 	cout << "請輸入您要多少個星星:" ;
 	 cin >> s ;
 	printStar(s);
-	multiply(m);
+	if(m<=10) multiply(m);
 	printStar(s);
 return 0;
 }
