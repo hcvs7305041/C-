@@ -1,9 +1,9 @@
-//a164: ³\Ä@
+//a164: è¨±é¡˜
 #include <stdio.h>
 #include<stdlib.h>
 
 int main (void){
-	printf("a003:³\Ä@\t³q¹L¤ñ²v\'93%\'\n");
+	printf("a003:è¨±é¡˜\té€šéæ¯”ç‡\'93%\'\n");
 	printf("\t^_^\n");
 	printf("\t\"o\"\n")
 	printf("\t\\^o^/"); 
@@ -11,20 +11,20 @@ int main (void){
 }
 
 
-//a165: ¥Á°ê»P¦è¤¸ªº´«ºâ
+//a165: æ°‘åœ‹èˆ‡è¥¿å…ƒçš„æ›ç®—
 #include <stdio.h>
 #include<stdlib.h>
 
 int main (void){
 	int y=1912, x=2018;
-	printf("¿é¥X1:\n");
+	printf("è¼¸å‡º1:\n");
 	printf("%d\n", x/y);
-	printf("¿é¥X2:\n");
+	printf("è¼¸å‡º2:\n");
 	printf("%d", x-y+1);
 }
 
 
-//a166: ¯x§Îªº­±¿n
+//a166: çŸ©å½¢çš„é¢ç©
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -36,7 +36,7 @@ int main (){
 }
 
 
-//a167: ®É¶¡´«ºâ(¤@)
+//a167: æ™‚é–“æ›ç®—(ä¸€)
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -47,7 +47,7 @@ int main (){
 }
 
 
-//a168. ®É¶¡´«ºâ(¤G)
+//a168. æ™‚é–“æ›ç®—(äºŒ)
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -59,7 +59,7 @@ int main() {
 }
 
 
-//a170. ¹q¸£³B²z³t«×ªº±Àºâ
+//a170. é›»è…¦è™•ç†é€Ÿåº¦çš„æ¨ç®—
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -74,7 +74,7 @@ int main() {
 }
 
 
-//a171: ·Å«×Âà´«
+//a171: æº«åº¦è½‰æ›
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -87,7 +87,7 @@ int main() {
 }
 
 
-//a173. ¬d¸ß¦r¤¸ªºASCII½X
+//a173. æŸ¥è©¢å­—å…ƒçš„ASCIIç¢¼
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -98,18 +98,18 @@ int main(){
 }
 
 
-//a174. §A³ßÅw°µ¤°»ò?
+//a174. ä½ å–œæ­¡åšä»€éº¼?
 #include <stdio.h>
 #include<stdlib.h>
 int main()
 {
     char a[100]={'\0'};
     scanf("%s",&a); 	 
-    printf("§A³ßÅw%s¡A¥¦¬O§A¥­±`³Ì±`°µªº¨Æ¡A%s¬O§A¤@ª½¥H¨Ó³£«D±`¼ö·Rªº¨Æ¡A¨S¦³¥h%s´N¤£¹³§A¤F¡C",a,a,a);
+    printf("ä½ å–œæ­¡%sï¼Œå®ƒæ˜¯ä½ å¹³å¸¸æœ€å¸¸åšçš„äº‹ï¼Œ%sæ˜¯ä½ ä¸€ç›´ä»¥ä¾†éƒ½éå¸¸ç†±æ„›çš„äº‹ï¼Œæ²’æœ‰å»%så°±ä¸åƒä½ äº†ã€‚",a,a,a);
 }
 
 
-//a175. ¤Î®æ
+//a175. åŠæ ¼
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -123,7 +123,7 @@ int main(){
 }
 
 
-//a177: ¦¨ÁZ¤À§G
+//a177: æˆç¸¾åˆ†ä½ˆ
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -140,7 +140,7 @@ int main(){
 }
 
 
-//a178: ³f¤ñ¤T®a
+//a178: è²¨æ¯”ä¸‰å®¶
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -157,7 +157,7 @@ int main(){
 }
 
 
-//a179: ¤j¤pÃö«Y
+//a179: å¤§å°é—œä¿‚
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -173,7 +173,7 @@ int main(){
 }
 
 
-//a180. ¶|¦~§PÂ_
+//a180. é–å¹´åˆ¤æ–·
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -187,7 +187,7 @@ int a;
 }
 
 
-//a181. ¦¨ÁZµ¥²Ä
+//a181. æˆç¸¾ç­‰ç¬¬
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -207,7 +207,7 @@ int a;
 }
 
 
-//a183. ¤U¤È¯ù®É¶¡
+//a183. ä¸‹åˆèŒ¶æ™‚é–“
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -223,7 +223,7 @@ int main()
 }
 
 
-//a184. ¨í¨í¼Ö§I¼ú(¤@)
+//a184. åˆ®åˆ®æ¨‚å…Œç(ä¸€)
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
@@ -242,7 +242,7 @@ int main(){
 }
 
 
-//a185: ¨í¨í¼Ö§I¼ú(¤G)
+//a185: åˆ®åˆ®æ¨‚å…Œç(äºŒ)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -263,7 +263,7 @@ int main(){
 }
 
 
-//a186: §Ú°Q¹½°¸¼Æ
+//a186: æˆ‘è¨å­å¶æ•¸
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -277,7 +277,7 @@ int main() {
 }
 
 
-//a187: ²ÓµßÁc´Ş
+//a187: ç´°èŒç¹æ®–
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -311,7 +311,7 @@ int main() {
 }
 
 
-//a189. ©Ò¦³¦ì¼Æ©M
+//a189. æ‰€æœ‰ä½æ•¸å’Œ
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -328,7 +328,7 @@ int N,a,s=0;
 }
 
 
-//a190. ¼Æ¦r­ËÂà
+//a190. æ•¸å­—å€’è½‰
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -347,7 +347,7 @@ int N,a,b;
 }
 
 
-//a191. ¤@¤d¹M§Ú·R§A
+//a191. ä¸€åƒéæˆ‘æ„›ä½ 
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -359,7 +359,7 @@ int main(){
 }
 
 
-//a192. ³sÄò¾ã¼Æ¬Û¥[
+//a192. é€£çºŒæ•´æ•¸ç›¸åŠ 
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -382,7 +382,7 @@ printf("%d=%d",B,x+B);
 }
 
 
-//a193. ­Ë¼Æ­p®É
+//a193. å€’æ•¸è¨ˆæ™‚
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -399,7 +399,7 @@ int main(){
 }
 
 
-//a194. ¤p¤pºñªº¼Æ¾Ç²ßÃD
+//a194. å°å°ç¶ çš„æ•¸å­¸ç¿’é¡Œ
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -416,7 +416,7 @@ int main(){
 }
 
 
-//a195: ¤½¥­ªº¾Ô§Ğ(N¦æª©)
+//a195: å…¬å¹³çš„æˆ°å½¹(Nè¡Œç‰ˆ)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -437,7 +437,7 @@ int main() {
 }
 
 
-//a196: ¤½¥­ªº¾Ô§Ğ(0§Àª©)
+//a196: å…¬å¹³çš„æˆ°å½¹(0å°¾ç‰ˆ)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -459,7 +459,7 @@ if(A==0&&B==0)
 }
 
 
-//a197: ³Ì«á­Ë¼Æ
+//a197: æœ€å¾Œå€’æ•¸
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -494,7 +494,7 @@ int main() {
 }*/
 
  
-//a198: §ä³Ì¤j­È
+//a198: æ‰¾æœ€å¤§å€¼
 #include <stdio.h>
 #include <stdlib.h>
 
