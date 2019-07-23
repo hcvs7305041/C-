@@ -353,15 +353,15 @@ int main ()
     printf("請輸入一小寫的英文字母: ");
 	scanf("%c",&ch);
 	//將下列的字元轉為大寫
-    	ch2=toupper(ch);
-    printf("\n%c的大寫是%c", ch, ch2);
+    	ch2=toupper(ch); //toupper
+    printf("\n%c的大寫是%c", ch, ch2); //\n
 
-	getchar();
+	getchar(); //getchar();
 
 	//將下列的字元轉為小寫
     printf("\n請輸入一大寫的英文字母: ");
     scanf("%c", &ch);
-    	ch2=tolower(ch);
+    	ch2=tolower(ch); //tolower
     printf("%c的小寫是%c", ch, ch2);
 return 0;
 }
@@ -404,7 +404,7 @@ int main () {
 //將一行多餘的字元丟掉
     while (getchar()!='\n') {
     	continue;
-    }
+    
     while(ch!='*'){
     	chrary[k]=ch;
     	k++;
@@ -446,7 +446,7 @@ int main ()
 int main () 
 {
      char str[20]="Apple iPhone 4"; //空間不夠 
-     char sttr[]={'i', 'P', 'a', 'd'};
+     char sttr[]={'i', 'P', 'a', 'd','\0'}; //,'\0' 結尾
      char *pstr="Apple iPod";
      printf("str字串如下: %s\n", str);
      printf("sttr字串如下: %s\n", sttr);
@@ -492,10 +492,10 @@ int main (){
             scanf("%s",na);
             printf("請輸入分數: ");
             scanf("%d",&sc);
-            k++;
+            k++; //k++
       }
       printf("\n以下是您輸入的資料:\n");
-      for(i=0;i<k;i++){
+      for(i=0;i<k;i++){ //i<k
             printf("%-10s %3d\n", name[i], score[i]);
       }
 }
