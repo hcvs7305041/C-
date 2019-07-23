@@ -228,25 +228,36 @@ int main(){
 return 0;
 }
 //a143. T802****************************************************************************************************
-#include<stdio.h>
-#include<stdlib.h>
-int main(){
-	int a=0;
-	while(1){
-		printf("(1)教授\n(2)副教授\n(3)助理教授\n(4)都不是\n(5)結束\n請輸入您的職稱代號:");
-		scanf("%d",&a);
-		switch (a)
-		{
-			case 1: printf("\n您的職稱是教授\n");break;
-			case 2: printf("\n您的職稱是副教授\n");break;
-			case 3: printf("\n您的職稱是助理教授\n");break;
-			case 4: printf("\n您的職稱沒有在這選項內\n");break;
-			case 5: break;
-			default: printf("\n您的職稱沒有在這選項內\n");
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main (){
+    int a=0;
+    while(1)
+	{
+    	printf("(1)教授\n(2)副教授\n(3)助理教授\n(4)都不是\n(5)結束\n請輸入您的職稱代號:");
+    	scanf("%d",&a);
+   		switch (a)
+  		{
+    		case 1:
+			printf("\n您的職稱是教授\n");
+			break;
+    		case 2:
+			printf("\n您的職稱是副教授\n");
+			break;
+    		case 3:
+			printf("\n您的職稱是助理教授\n");
+			break;
+  	  	case 4:
+			printf("\n您的職稱沒有在這選項內\n");
+			break;
+    		case 5:
+			exit(0);
+   	 	default:
+			printf("\n您的職稱沒有在這選項內\n");
 		}
-	if(a==5)break;
 	}
-return 0;
+	return 0;
 }
 
 //a144. T803****************************************************************************************************
