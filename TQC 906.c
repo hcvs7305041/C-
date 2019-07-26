@@ -6,8 +6,8 @@ int main() {
 		char name[20];
 		int score;
 	};
-	
  	struct student st[5];
+	
 	int i;
 	for(i=0;i<5;i++){
 		printf("請輸入第%d位同學的姓名:",i+1);		
