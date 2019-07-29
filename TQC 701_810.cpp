@@ -302,26 +302,34 @@ return 0;
 }*/
 
 //a145. T804****************************************************************************************************
-#include <iostream> 
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
+double average (double* ,int );
 
-int main (){
-	int i, j;
-	double data[6],a=0;
-	for(i=0;i<6;i++)
-	{
+int main() {
+	double data[6];
+	int i;
+	for(i=0;i<6;i++){
 		printf("請輸入第%d個浮點數:",i+1);
-		cin >> data[i] ;
+		 scanf("%lf",&data[i]);
 	}
 	printf("\n您輸入的陣列值如下\n");
-	for(i=0;i<6;i++)
-	{
-		printf("data[%d]:%.2lf\n",i,data[i]);
-		a+=data[i];
+	for(i=0;i<6;i++){
+		printf("\n請輸入第%d個浮點數:%.2lf",i,data[i]);
+	}
+	printf("\n平均:%.2lf",average(data,6));
+	return 0;
+}
+
+double average (double* arr2,int n){
+	int i;
+	double a;
+	for(i=0;i<6;i++){
+		a+=arr2[i];
 	}
 	a=a/6;
-	printf("\n平均:%.2lf",a);
+	return a;
 }
 
 //a146. T805****************************************************************************************************
@@ -383,45 +391,45 @@ void CPD08_2(void)
 }
 
 //a147. T806****************************************************************************************************
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 void multiply(int);
 void printStar(int);
 
-int main(){ 
-	int m,p;
-	printf("請輸入您要幾乘幾的乘法表(最多10):");
-		scanf("%d",&m);
-	printf("請輸入您要多少個星星:");
-		scanf("%d",&p);
-	printStar(p);
-	if(m<=10){
-		multiply(m);
-	}
-	printStar(p);
-return 0;
+int main() {
+	int m, s;
+	printf("請輸入您要幾乘幾乘法表(最多10):");
+	 scanf("%d",&m);
+	printf("請輸入您要幾個星星:");
+	 scanf("%d",&s);
+	 
+	printStar(s);
+	if(m<=10) multiply(m);
+	printStar(s);
+	
+	system("pause"); 
+	return 0;
 }
 
-void multiply(int n){//乘法 
-	int a,b;
-	for ( a=1;a<=n;a++ ) 
-		{ 
-			for ( b=1;b<=n;b++)
-			{ 
-				printf("%2d*%2d=%2d ",a,b,a*b);
-			}
-		printf("\n");
+void multiply(int a){
+	int i, j;
+	for(i=1;i<=a;i++){
+		for(j=1;j<=a;j++){
+			printf("%3d*%3d=%3d",j,i,i*j);
 		}
+		printf("\n");
+	}
 }
 
-void printStar(int n){//星星 
+void printStar(int a){
 	int i;
-	for(i=0;i<n;i++){
+	for(i=0;i<a;i++){
 		printf("*");
-	} 
-printf("\n");
+	}
+	printf("\n");	
 }
+
 =================================================================================================================
 =================================================================================================================
 /*#include <iostream>
