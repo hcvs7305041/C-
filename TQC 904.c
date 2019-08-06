@@ -50,3 +50,43 @@ Nancy
 John
 -2
 */
+
+
+
+
+
+
+
+
+
+/*================================================================================================================*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	struct{
+		char name[20];
+		int score;
+	}str[9999];
+	int i=-1;
+	do{
+		i++;
+		printf("請輸入學生的姓名(分數輸入負分的分數時結束):");
+		 scanf("%s",&str[i].name);
+		printf("請輸入此學生C語言分數:");
+		 scanf("%d",&str[i].score);
+		
+	}while(str[i].score>=0);
+	int k=0;
+	while(k<i){
+		printf("%s的c語言分數是%d\n",str[k].name,str[k].score);
+		k++;	
+	}
+	return 0;
+}
+
+ 		
+
+
