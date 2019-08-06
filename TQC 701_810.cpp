@@ -620,3 +620,82 @@ int main (){
 		}
 
 }
+
+=================================================================================================================
+=================================================================================================================
+/*#include <stdio.h>
+#include <stdlib.h>
+
+void k (int* ,int* ,int* );
+void st (int* ,int ,int );
+
+int main() {
+	int i, j;
+	int arr1[3][3], arr2[3][3], arr3[3][3];
+	printf("請輸入矩陣一...\n");
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("m1[%d][%d]:",i,j);
+			scanf("%d",&arr1[i][j]);
+		}
+	}
+	
+	printf("請輸入矩陣二...\n");
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("m1[%d][%d]:",i,j);
+			scanf("%d",&arr2[i][j]);
+		}
+	}
+	k(arr1[0],arr2[0],arr3[0]);
+	
+	printf("\n矩陣一\n");
+	st(arr1[0],3,3);
+	printf("\n矩陣二\n");	
+	st(arr2[0],3,3);
+	printf("\n矩陣三\n");
+	st(arr3[0],3,3);			
+	return 0;
+}
+
+void k (int* a1,int* a2,int* a3){
+	int i;
+	for(i=0;i<(3*3);i++){
+		*(a3+i) = *(a1+i)**(a2+i);
+	}
+}
+
+void st (int *x ,int n,int m){
+	int i, j;
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("\t%2d",*(x+i*m+j));				
+		}
+		printf("\n");
+	}
+	
+}
+
+
+/*
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+3
+2
+1
+6
+5
+4
+9
+8
+7
+*/
+*/
