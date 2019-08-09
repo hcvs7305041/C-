@@ -31,7 +31,7 @@ int main(){
 	 scanf("%d",&c->score );
 	b->next=c;
 	c->next=NULL;
- /*----------------------下面面-----------------------------*/
+
 	printf("\n輸出...\n");
 	current = a;
 	while(current!=NULL){
