@@ -9,7 +9,7 @@ void shellsort (int a[],int n){
 	while(gro>0){  
 		for(i=0;(i+gro)<n;i++){  
 			if(a[i]>a[i+gro]){
-				swap(a[i],a[i+gro]);
+				swap(&a[i],&a[i+gro]);
 			}
 		}
 	//cout << gro <<  "  ";
