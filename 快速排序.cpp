@@ -12,7 +12,7 @@ void puicksort (int a[],int left,int right)
 			while(a[j]>key) j--;	//向左找比key大的 
 			if (i<j) swap(a[i],a[j]);	//比key大放到右邊 和比key小放到左邊  
 		}
-		swap(a[left],a[j]);  //基準值交換 
+		swap(&a[left],&a[j]);  //基準值交換 
 		puicksort(a,left,j-1);  //"開頭"到中間基準的上一個 
 		puicksort(a,j+1,right); //中間基準的下一個到"結尾"
 	}
