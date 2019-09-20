@@ -500,7 +500,7 @@ int sum(int *p, int x, int y)
 //a111. T410
 #include <stdio.h>
 #include <stdlib.h>
-int Max(int *p, int n, int m);
+int Max(int *p, int n, int m); //*p
 int main ( ) 
 {
 	int arr2[2][3];
@@ -520,17 +520,17 @@ int main ( )
 		}
 	}
   
-	maximum=Max(&arr2[0][0], 2, 3);
+	maximum=Max(&arr2, 2, 3); //&arr2
 	printf("\n此陣列的最大值為%d\n", maximum);
 	return 0;
 }
-int Max(int *p, int x, int y)
+int Max(int *p, int x, int y) //*p
 {
-	int i, j, maxi_value=*p;
+	int i, j, maxi_value=*p; //*p
 	for (i=0; i<x; i++) {
 		for (j=0; j<y; j++) {
-			if (maxi_value < *(p+i*y+j)) {
-				maxi_value = *(p+i*y+j);
+			if (maxi_value < *(p+i*y+j)) { //*(p+i*y+j))
+				maxi_value = *(p+i*y+j); //*(p+i*y+j))
 			}
  		}
 	}
