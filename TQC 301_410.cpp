@@ -259,7 +259,7 @@ int main ()
 int main () 
 {
  int num=100;
- int *pointer=&num;
+ int *pointer=&num; //&
  printf("num=%d, *pointer=%d\n", num, *pointer);
  return 0;
 }
@@ -317,7 +317,7 @@ int main ()
 	printf("\n另一種表示方法\n");
 	for (i=0; i<2; i++) {
 		for (j=0; j<3; j++) {
-			printf("arr[%d][%d]=%d\n", i, j, *(arr[i]+j));
+			printf("arr[%d][%d]=%d\n", i, j, *(arr[i]+j)); //*(arr[i]+j)
 		}
 	}
   
@@ -325,7 +325,7 @@ int main ()
 	printf("\n第三種表示方法\n");
 	for (i=0; i<2; i++) {
 		for (j=0; j<3; j++) {
-			printf("arr[%d][%d]=%d\n", i, j, *(*(arr+i)+j));
+			printf("arr[%d][%d]=%d\n", i, j, *(*(arr+i)+j)); // *(arr+i)+j)
 		}
 	}
 return 0;
@@ -376,7 +376,7 @@ int main ( )
 	printf("交換前i與j的值: \n");
 	printf("i=%d, j=%d\n", i, j);
 
-	change(&i, &j);
+	change(&i, &j); //&i, &j
 	printf("交換後i與j的值: \n");
 	printf("i=%d, j=%d\n", i, j);
 
@@ -386,9 +386,9 @@ int main ( )
 void change(int *x, int *y)
 {
 	int temp;
-	temp=*x;
-	*x=*y;
-	*y=temp;
+	temp=*x; //*x
+	*x=*y; //*x *y
+	*y=temp; //*y
 }
 
 /*----------------------------------------------------------------------------------------------*/
