@@ -133,15 +133,15 @@ int main ()
     double area;
     struct circle c1={10, 10, 8.5};
 
-    area = callarea(&c1);
+    area = callarea(&c1); //&c1
  
-    printf("此圓的圓心為(%d,　%d), 半徑為%.2f, 面積為%.2f\n", c1.x, c1.y, c1.radius, area);
+    printf("此圓的圓心為(%d,　%d), 半徑為%.2f, 面積為%.2f\n", c1.x, c1.y, c1.radius, area); //c1.radius
     return 0;
 }
 
-double callarea(struct circle *pr)
+double callarea(struct circle *pr) //double
 {
-    double area;
+    double area; //double
     area = pr->radius * pr->radius * 3.14159;
     return area;
 }
@@ -197,11 +197,11 @@ int main ()
     for (i=0; i<5; i++) 
     {
         printf("請輸入第%d位員工的姓名: ", i+1);
-        scanf("%s", &employee[i].name);
+        scanf("%s", &employee[i].name); //&
         printf("請輸入第%d位員工的工作時數: ", i+1);
-        scanf("%d", &employee[i].hour);
+        scanf("%d", &employee[i].hour); //&
        printf("請輸入第%d位員工一小時的工資: ", i+1);
-       scanf("%lf", &employee[i].pay);
+       scanf("%lf", &employee[i].pay); //%&
     }
  
  
@@ -209,7 +209,7 @@ int main ()
     {
        salary[i]=employee[i].hour*employee[i].pay;
        printf("%-10s 的薪水為　%.2f\n", 
-          employee[i].name,salary[i]);
+          employee[i].name,salary[i]); // salary[i]
     }
 return 0;
 }
@@ -275,15 +275,15 @@ int main ()
     	scanf("%d", &c->radius);
     c->next=NULL;
     b->next=c;
-	current = a ;
+	current = a ; ////把 current 設定初始值 a
     int i=1;
     while (current != NULL) {
        printf("第%d個圓的圓心為(%d, %d), 半徑為%d\n",         
           i, current->x, current->y, current->radius);
        i++;
-       current=current->next;
+       current=current->next; //做完一輪後，要把記憶體位置導向下一個
     }
-    free(a);
+    free(a); //釋放記憶體
     free(b);
     free(c);
     return 0;
