@@ -72,7 +72,7 @@ int main ()
 //a115. T504
 #include <stdio.h>
 #include <stdlib.h>
-struct rect {
+struct rect {			//全域宣告
 	int length, width;
 	};
 	
