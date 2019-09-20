@@ -394,6 +394,29 @@ int main ()
 return 0;
 }
 
+//========================================
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <ctype.h>
+int main ()
+{
+     char ch, ch2;
+     printf("請輸入一小寫的英文字母: ");
+     ch=getche(); //輸入就讀取
+//將下列的字元轉為大寫
+     ch2=toupper(ch); //轉大寫
+     printf("\n%c的大寫是%c", ch, ch2); //\n   getche()不會換行
+
+  //將下列的字元轉為小寫
+     printf("\n請輸入一大寫的英文字母: ");
+     scanf("%c", &ch);
+     ch2=tolower(ch); ////轉小寫
+     printf("%c的小寫是%c", ch, ch2);
+     system("PAUSE");
+     return 0;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 //a126. T605
 #include <stdio.h>
@@ -452,7 +475,36 @@ int main () {
 
 return 0;
 }
-
+//===================================
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+ FILE *fptr;
+ char ch;
+ fptr=fopen("character.dat", "w");
+ printf("請輸入一字元: ");
+ scanf("%c", &ch);
+ while (getchar() != '\n') {
+  continue;
+ }
+ while (ch != '*') {
+  fprintf(fptr,"%c",ch);//fprintf(檔案指標,印入格式,來源);
+  printf("請輸入一字元: ");
+  scanf("%c", &ch);
+  //將一行多餘的字元丟掉
+  while (getchar() != '\n') {
+   continue;
+  }
+ }
+ fclose(fptr);
+ fptr=fopen("character.dat", "r");
+ printf("\n以下是您輸入的資料:\n");
+ while (fscanf(fptr,"%c", &ch) != EOF){ //fptr,  &ch  !=
+  printf("%3c\n", ch);
+ }
+ system("PAUSE");
+ return 0;
+}
 /*----------------------------------------------------------------------------------------------*/
 //a128. T607
 #include <stdio.h>
@@ -532,4 +584,36 @@ int main (){
       for(i=0;i<k;i++){ //i<k
             printf("%-10s %3d\n", name[i], score[i]);
       }
+}
+//===================================
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main (){
+    FILE *fptr;
+    char name[20];
+    int score;
+    fptr=fopen("score.dat", "w");
+    printf("請輸入姓名: ");
+     scanf("%s", name);
+    printf("請輸入分數: ");
+     scanf("%d", &score);
+    
+	while(score!=-100) {   
+    	fprintf(fptr,"%s %d", name, score); //fptr,
+    	  printf("請輸入姓名: ");
+     	    scanf("%s", name);
+    	  printf("請輸入分數: ");
+     	    scanf("%d", &score);
+    }
+    fclose(fptr);
+      
+    fptr=fopen("score.dat", "r");
+    printf("\n以下是您輸入的資料:\n");
+      
+    while (fscanf(fptr,"%s %d", name, &score) !=EOF)  //fptr,   &score
+        printf("%-10s %3d\n", name, score);
+
+	system("PAUSE"); 
+    return 0;
 }
